@@ -9,7 +9,7 @@ ______
 
 ## Description of endpoints 
 
-### Authorization
+### Authorization (click to see description):
 
 <details>
  <summary><code>POST</code> <code>(does authorization by email and password)</code></summary>
