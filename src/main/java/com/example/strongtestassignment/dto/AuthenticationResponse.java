@@ -1,6 +1,5 @@
 package com.example.strongtestassignment.dto;
 
-import lombok.NoArgsConstructor;
 import lombok.Value;
 
 @Value
