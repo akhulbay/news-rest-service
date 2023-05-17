@@ -425,3 +425,9 @@ _______
 ## Notes 
 
 For the news controller, it was necessary to create several GET requests with source_id and topic_id and there should be pagination. I combined all these queries into one by making a dynamic filter and adding pagination.
+
+_______
+
+## Statistical Task
+
+Every day at midnight, the system will make a statistical report. It is the amount of news for each source. If this is the first launch, the system will create the file itself, and if the file already exists, it will simply add records with the time indication there.
