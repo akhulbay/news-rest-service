@@ -404,7 +404,8 @@ To create a database, I used ***PostgreSQL DBMS***. To interact with it, the cap
 The application has 3 main tables. News, News source and News Topic. News is linked to News source and News topic via foreign key.
 Also, there is a User table for storing user data during registration.
 
-![image](https://github.com/akhulbay/news-rest-service/assets/117244670/62d1e76e-5024-47e8-abca-be75615bf1e6)
+![database-diagram](https://github.com/akhulbay/news-rest-service/assets/117244670/c3c7305f-7112-44fc-934b-aa3a5b1f59af)
+
 
 
 To implement the Repository level, a ready-made implementation of the ***JpaRepository*** interface was used. And its functionality satisfied most of the requests. But to implement dynamic filters and pagination for news, I also used the ***JpaSpecificationExecutor*** interface and the ***Criteria API***.
@@ -417,5 +418,10 @@ ______
 
 ## Testing
 To test this REST service, I used ***Swagger***, which automatically generates an html page with all requests.
+![swagger-ui](https://github.com/akhulbay/news-rest-service/assets/117244670/3764a6c5-d625-4194-b202-df68d29e4fc6)
 
-![image](https://github.com/akhulbay/news-rest-service/assets/117244670/5b0b1ce0-02bf-4a15-b652-c29ec47ca02a)
+_______
+
+## Notes 
+
+For the news controller, it was necessary to create several GET requests with source_id and topic_id and there should be pagination. I combined all these queries into one by making a dynamic filter and adding pagination.
