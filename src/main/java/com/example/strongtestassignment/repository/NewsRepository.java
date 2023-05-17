@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface NewsRepository extends JpaRepository<News, Long>,
         FilterNewsRepository,
         JpaSpecificationExecutor<News> {
+    Integer countNewsByNewsSource_Id(Integer sourceId);
 }
