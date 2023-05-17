@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
-public class Scheduler {
+public class StatisticScheduler {
 
     private final NewsRepository newsRepository;
     private final NewsSourceRepository newsSourceRepository;
