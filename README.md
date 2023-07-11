@@ -1,4 +1,4 @@
-# news-rest-service
+# news-rest-service-with-jwt-token
 
 ***News REST Service*** is a service for stroring, processing and displaying news.
 
